@@ -59,19 +59,24 @@ openssl enc -d -aes-128-cbc -in test.vol.enc -out test.vol.dec
 sha1sum test.vol*
 
 # rsa
-genrsa -out rsa.key 2048
+openssl genrsa -out rsa.key 2048
+openssl rsa -in rsa.key -text -noout
 openssl rsa -in rsa.key -pubout -out rsa.pub
+echo "1234567890123456" > password.txt
+openssl rsautl -encrypt -pubin -inkey rsa.pub  -in password.txt -out password.txt.rsa
+openssl rsautl -decrypt -inkey rsa.key -in password.txt.rsa -out password.txt.dec
+openssl dgst -sha256 -sign rsa.key -out password.txt.sign password.txt
+openssl dgst -sha256 -verify  rsa.pub -signature password.txt.sign password.txt
 
-
-
-
-
-
+# dsa
 
 
 
 
 ```
+Lectruras adicionales:
+* [RSA sign and verify using Openssl : Behind the scene](https://medium.com/@bn121rajesh/rsa-sign-and-verify-using-openssl-behind-the-scene-bf3cac0aade2)
+
 
 ## Coherence
 
