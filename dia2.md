@@ -32,9 +32,48 @@ Hardware empresarial:
 ## Openssl
 
 ```bash
+# version
+openssl version
+openssl version -a
+
+# lista de comandos
+openssl help
+
+# benchmark
+openssl speed
+
+#rand
+openssl rand -hex 20
+
+# hashes
+openssl dgst -h
+openssl dgst -sha1 test.vol
+
+#HMAC
+openssl dgst -sha1 -hmac "123" test.vol
+
+# algoritmos simetricos
+openssl list-cipher-commands
+openssl enc -e -aes-128-cbc -in test.vol -out test.vol.enc
+openssl enc -d -aes-128-cbc -in test.vol.enc -out test.vol.dec
+sha1sum test.vol*
+
+# rsa
+genrsa -out rsa.key 2048
+openssl rsa -in rsa.key -pubout -out rsa.pub
+
+
+
+
+
+
+
 
 
 
 ```
 
-[End-to-end-user-credentials-protection](https://scotch.io/@liesware/end-to-end-user-credentials-protection)
+## Coherence
+
+* [End-to-end-user-credentials-protection](https://scotch.io/@liesware/end-to-end-user-credentials-protection)
+* [PoC](https://github.com/liesware/coherence-poc)
