@@ -44,6 +44,7 @@ openssl speed
 
 #rand
 openssl rand -hex 20
+openssl rand -base64 20
 
 # hashes
 openssl dgst -h
