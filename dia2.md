@@ -100,6 +100,10 @@ openssl s_client -connect localhost:443 -CAfile  ca.crt
 Lectruras adicionales:
 * [RSA sign and verify using Openssl : Behind the scene](https://medium.com/@bn121rajesh/rsa-sign-and-verify-using-openssl-behind-the-scene-bf3cac0aade2)
 
+## Protocolos
+
+* (MTProto)[https://core.telegram.org/mtproto]
+* (ToR)[https://2019.www.torproject.org/about/overview.html.en]
 
 ## Coherence
 
