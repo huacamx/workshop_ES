@@ -15,5 +15,24 @@ df -h
 veracrypt -d
 ```
 
+Software adicional:
+
+* [Acra](https://www.cossacklabs.com/acra/)
+* [Vaultproject](https://www.vaultproject.io/)
+* [SQLCipher](https://www.zetetic.net/sqlcipher/)
+
+Hardware empresarial:
+
+* [Thales](https://www.thalesesecurity.com/solutions/use-case/data-security-and-encryption/database-security)
+* [Utimaco](https://hsm.utimaco.com/solutions/applications/database-encryption/)
+* [Gemalto](https://safenet.gemalto.com/data-encryption/data-center-security/protect-db-database-encryption/)
+
+## Openssl
+
+```bash
+
+
+
+```
 
 [End-to-end-user-credentials-protection](https://scotch.io/@liesware/end-to-end-user-credentials-protection)
